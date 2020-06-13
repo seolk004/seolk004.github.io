@@ -1,5 +1,5 @@
 <!doctype html> <!-- Assignment.html -->
-<html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<html lang="ko"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
 <style> * { box-sizing:border-box; padding:0; margin:0; }  .row::after { content:""; clear:both; display:table; }
 .col-1{ width:8.33%;} .col-2{width:16.66%;} .col-3{width:25%;} .col-4{width:33.33%;}
 .col-5{width:41.66%;} .col-6{width:50%;} .col-7{width:58.33%;} .col-8{width:66.66%;}
@@ -11,16 +11,29 @@
 .banner li {border:2px solid black; padding:10px; margin-bottom:10px;}
 .banner li img { width:40%; vertical-align:middle; text-align:center;} 
 @media only screen and (max-width: 768px) { [class*="col-"] { width: 100%; } }  
-</style><title>개인별 프로젝트</title></head>
+</style>
+  <script>
+  function event1onclick(){  document.getElementById("id_1").innerHTML
+  ="<h3>수강과목</h3><p>프로그래밍: C, C++, 인터넷, JAVA, 윈도우, 모바일, 네트워크, 웹 서버</p><p>소프트웨어 개발: 컴퓨터 그래픽, 인공지능, 멀티미디어 시스템, 비즈니스 프로세스 관리, 프로젝트 관리</p><p>컴퓨터 시스템 및  네트워크: 컴퓨터 시뮬레이션, 컴퓨터 구조, 통신보안, 네트워크와 데이터 통신</p><p>캡스톤 디자인</p><p>자료구조, 논리회로, 오토마타, 수치계산, 영상처리, 데이터베이스 등</p>"
+  function event2onclick(){  document.getElementById("id_1").innerHTML
+  ="<h3>대회ㆍ프로젝트</h3><p>교내외 프로젝트</p><p>캡스톤</p><p>해카톤</p><p>교내외 경진대회</p>"
+  function event3onclick(){  document.getElementById("id_1").innerHTML
+  ="<h3>자격증</h3><p>컴퓨터활용능력</p><p>정보처리기사 등</p>"
+  function event4onclick(){  document.getElementById("id_1").innerHTML
+  ="<h3>동아리</h3><p>동아리 활동 내역</p>"
+  function event5onclick(){  document.getElementById("id_1").innerHTML
+  ="<h3>봉사활동</h3><p>봉사활동 내역</p>"
+  </script>
+ <title>개인별 프로젝트</title></head>
 <body>
 <header class="header"><h2>기술 이력서</h2></header>  
 <div class="row"></div>
 <div id="main">  
  <nav class="col-3 banner"> 
-  <ul><li><img src="./profile.jpg"></li><li>이름: 김설</li><li>생년월일: 00.04.14</li><li>E-mail: seolk004@gmail.com</li><li>학력: 대전대학교 컴퓨터공학과</li></ul></nav>
+  <ul><li>사진: <img src="./profile.jpg"></li><li>이름: 김설</li><li>생년월일: 00.04.14</li><li>E-mail: seolk004@gmail.com</li><li>학력: 대전대학교 컴퓨터공학과</li></ul></nav>
  <section class="col-6">
-  <h3>대전광역시</h3><p>우리나라 중앙에 위치한 150만.....</p></section>
+  <p id="id_1">우측의 내용 클릭</p></section>
  <aside class="col-3 menu">
-   <ul><li>수강과목</li><li>대회ㆍ프로젝트</li><li>자격증</li><li>동아리</li></ul></aside>
+  <ul><li onclick="event1onclick()">수강과목</li><li onclick="event2onclick()">대회ㆍ프로젝트</li><li onclick="event3onclick()">자격증</li><li onclick="event4onclick()">동아리</li><li onclick="event5onclick()">봉사활동</li></ul></aside>
 </div><div class="row"></div>
 <footer class="footer"><h4>Copyright 20XX Korea.</h4></footer></body></html>
